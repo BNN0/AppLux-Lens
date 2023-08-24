@@ -107,6 +107,7 @@ namespace LuxLens.Api.Controllers.AuthController
         [Authorize]
         public async Task<IActionResult> Logout()
         {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             await _signInManager.SignOutAsync();
 
             return Ok("Cierre de sesión exitoso");

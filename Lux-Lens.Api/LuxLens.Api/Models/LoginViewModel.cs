@@ -15,7 +15,5 @@ namespace LuxLens.Api.Models
         [Display(Name = "Contraseña")]
         public string Password { get; set; }
 
-        [Required(ErrorMessage = "El campo Tipo de usuario es obligatorio.")]
-        public string UserType { get; set; }
     }
 }
