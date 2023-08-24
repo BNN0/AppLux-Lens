@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LuxLens.Api.Controllers.LensControllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class LensController : ControllerBase

@@ -2063,3 +2063,5 @@ C:\Users\REPCOM\Documents\GitHub\AppLux-Lens\Lux-Lens.Api\LuxLens.Api\obj\Debug\
 C:\Users\REPCOM\Documents\GitHub\AppLux-Lens\Lux-Lens.Api\LuxLens.Api\obj\Debug\net6.0\LuxLens.Api.pdb
 C:\Users\REPCOM\Documents\GitHub\AppLux-Lens\Lux-Lens.Api\LuxLens.Api\obj\Debug\net6.0\LuxLens.Api.genruntimeconfig.cache
 C:\Users\REPCOM\Documents\GitHub\AppLux-Lens\Lux-Lens.Api\LuxLens.Api\obj\Debug\net6.0\ref\LuxLens.Api.dll
+D:\PuntoSingular\Luxottica\LuxlensProject\AppLux-Lens\Lux-Lens.Api\LuxLens.Api\bin\Debug\net6.0\Lux-Lens.AppServices.Shared.dll
+D:\PuntoSingular\Luxottica\LuxlensProject\AppLux-Lens\Lux-Lens.Api\LuxLens.Api\bin\Debug\net6.0\Lux-Lens.AppServices.Shared.pdb
