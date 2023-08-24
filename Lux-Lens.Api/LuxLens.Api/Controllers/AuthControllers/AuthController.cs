@@ -62,7 +62,7 @@ namespace LuxLens.Api.Controllers.AuthController
             return BadRequest(ModelState);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         [HttpPost("Register")]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
@@ -84,7 +84,9 @@ namespace LuxLens.Api.Controllers.AuthController
                     if (!roleExists)
                     {
                         // Si el rol no existe, crea el rol
-                        await _roleManager.CreateAsync(new IdentityRole(model.UserType));
+                        await _roleManager.CreateAsync(new IdentityRole("ADMIN"));
+                        await _roleManager.CreateAsync(new IdentityRole("USER"));
+                        await _roleManager.CreateAsync(new IdentityRole("GUEST"));
                     }
 
                     // Asigna el rol al usuario recién creado
@@ -99,6 +101,15 @@ namespace LuxLens.Api.Controllers.AuthController
             }
 
             return BadRequest(ModelState);
+        }
+
+        [HttpPost("Logout")]
+        [Authorize]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+
+            return Ok("Cierre de sesión exitoso");
         }
     }
 }
